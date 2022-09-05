@@ -30,3 +30,4 @@ WWW: 문서와 리소스를 공유할 수있는 시스템
 ## Nice To Have
 - 개발도구 확장기능 소개
 [My Favorite VS Code Extensions](https://www.youtube.com/watch?v=rH1RTwaAeGc)
+이미 기본적으로 제공하는 것들이 많아졌다. 계속 발전하는 툴임을 느낄 수 있었다.(3년 전과 또 다르구나...)
