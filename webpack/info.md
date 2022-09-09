@@ -86,6 +86,15 @@
     chunks:['index']
     }),
     ```
+
 ## 9. 선물
 - 변경을 감지해서 webpack이 동작함
     $`npx webpack --watch`
+
+## 10. npm 패키지 사용
+- npm 의 패키지를 webpack에서 활용
+- 패키지 설치
+    $`npm install lodash`
+- index.js 에 import
+    `import _ from "lodash"`
+- `_`를 사용해서 함수 사용 끝
