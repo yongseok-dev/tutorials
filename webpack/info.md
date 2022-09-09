@@ -41,17 +41,17 @@
 ## 3. 웹팩의 도입
 - 여러 파일을 묶고,구버전 브라우저에서도 동작하도록 만들어주는 번들러의 필요에서 시작 
 - webpack 설치
-    `$ npm install -D webpack webpack-cli`
+    $`npm install -D webpack webpack-cli`
     `.gitignore`에 `*/node_modules` 추가
 - 엔트리 파일을 만들고 webpack 5.74.0 번들링
-    `$ npx webpack --entry ./source/index.js --output-path ./public/index_bundle.js`
+    $`npx webpack --entry ./source/index.js --output-path ./public/index_bundle.js`
 - 버전 및 환경설정에 따라서 결과가 다를 수 있다.
 
 ## 4. 설정파일 도입
 - 다양한 형태의 자원들을 webpack 사용시 단순하게 만들어준다.
 - 체계적이고 보기 좋게 webpack [configuration](https://webpack.js.org/configuration/)를 사용해보자
 - webpack.config.js 생성
-- `$ npx webpack --config webpack.config.js` = `npx webpack`(단, webpack.config.js 이름 동일해야 동작)
+- $`npx webpack --config webpack.config.js` => $`npx webpack`(단, webpack.config.js 이름 동일해야 동작)
 
 ## 5. 모드의 도입
 - `mode: "development",` 변환된 코드를 조금은 풀어서 저장한다.
@@ -60,7 +60,7 @@
 ## 6. 로더의 도입
 - webpack의 핵심: css 같은 파일도 함께 모듈화한다.
 - [로더 키워드](https://webpack.js.org/loaders/)를 아는게 필요하다.
-- Loading CSS: `$ npm install --save-dev css-loader style-loader`
+- Loading CSS: $`npm install --save-dev css-loader style-loader`
 - 로더는 가공공장, config 모듈, 룰에서 파일을 만나면 로더다 돌아간다.(체이닝 동작)
 
 ## 7. output설정
@@ -68,3 +68,21 @@
 - entry, output에 정보를 추가한다.
     - `entry:{ index:"경로1", about:"경로2"}`
     - `filename: '[name]_bundle.js'`
+
+## 8. 플러그인의 도입
+- [플러그인](https://webpack.js.org/plugins/)은 결과물을 보다 자유롭게 다루게 된다.
+- html-webpack-plugin 설치
+    $`npm install --save-dev html-webpack-plugin`
+- config 에서 로더와 다르게 직접 실행이 필요하다.
+    - `const HtmlWebpackPlugin = require('html-webpack-plugin');`
+    - `plugins:[new HtmlWebpackPlugin()]` 를 추가
+- webpack output 위치의 파일을 삭제하고 webpack 을 돌리는게 좋다
+    $`rm ./public/*.*; npx webpack`
+- config 에서 `new HtmlWebpackPlugin()`에 인자를 넣어 주어야 각각 파일로 저장이 됨.
+    ```javascript  
+    new HtmlWebpackPlugin({
+    template:'./source/index.html',
+    filename:'./index.html',
+    chunks:['index']
+    }),
+    ```
