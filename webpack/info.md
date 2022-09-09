@@ -22,8 +22,9 @@
     - INPUT
     - PROCESS
     - OUTPUT
+- 필요할 때 공부하자.
 ### 스킬
-- 
+- 설정파일에도 조건문이 들어갈 수 있다면 보다 편하게 제어할 수 있는 가능성이 있음
 ### 지식
 - 
 
@@ -53,3 +54,12 @@
 - webpack.config.js 생성
 - `$ npx webpack --config webpack.config.js` = `npx webpack`(단, webpack.config.js 이름 동일해야 동작)
 
+## 5. 모드의 도입
+- `mode: "development",` 변환된 코드를 조금은 풀어서 저장한다.
+- 파일을 분리하거나, 조건문을 추가해 development, production을 스위칭하는 방법도 있다.
+
+## 6. 로더의 도입
+- webpack의 핵심: css 같은 파일도 함께 모듈화한다.
+- [로더 키워드](https://webpack.js.org/loaders/)를 아는게 필요하다.
+- Loading CSS: `$ npm install --save-dev css-loader style-loader`
+- 로더는 가공공장, config 모듈, 룰에서 파일을 만나면 로더를 돌린다.(체이닝 동작)
