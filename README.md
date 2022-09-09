@@ -44,4 +44,4 @@
 - Formating: `shift + option + F`
 - Emmet: `$`(넘버링 기능)
 ### 지식
-- 
+- Semantic 목적, 대략적인 종류

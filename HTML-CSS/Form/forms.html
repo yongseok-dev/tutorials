@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h1>form 연습</h1>
+    <form action="" method="get">
+        <p>
+
+            <label for="username">사용자 이름: </label>
+            <input name="name" id="username" type="text" placeholder="username">
+        </p>
+        <p>
+            <label for="age">나이: </label>
+            <input name="age" id="age" type="number">
+        </p>
+        <p>
+            <label for="pw">PW: </label>
+            <input id="pw" type="password" value="123">
+        </p>
+        <p>
+            <input type="color">
+        </p>
+        <p><input type="time"></p>
+        <p><input type="date"></p>
+
+        <p>
+            <label for="checkbox">checkbox</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </p>
+
+        <button>submit</button>
+        <input type="submit" value="Click Me">
+    </form>
+    <h2>검색</h2>
+    <h3>reddit</h3>
+    <form action="http://www.reddit.com/search" method="get">
+        <input type="text" name="q">
+        <button type="submit">검색</button>
+    </form>
+
+    <h2>est</h2>
+    <form action="">
+        <label for="agree"> 동의합니다
+            <input type="checkbox" name="aggre_tos" id="agree" checked>
+        </label>
+
+        <p>
+            <label for="xs">XS
+                <input type="radio" name="size" id="xs" value="전송값">
+            </label>
+            <label for="s">S
+                <input type="radio" name="size" id="s">
+            </label>
+            <label for="m">M
+                <input type="radio" name="size" id="m">
+            </label>
+        </p>
+
+        <button type="submit">제출</button>
+        
+    </form>
+    <form action="" method="get">
+        <select name="sel" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    <input type="range">
+    <textarea name="textareavalue" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    <form action="">
+        <p>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="username">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="password">
+        </p>
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>
