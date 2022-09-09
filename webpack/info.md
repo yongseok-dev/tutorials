@@ -86,3 +86,6 @@
     chunks:['index']
     }),
     ```
+## 9. 선물
+- 변경을 감지해서 webpack이 동작함
+    $`npx webpack --watch`
