@@ -25,19 +25,21 @@
 - 
 
 ## 1. 수업소개
-자바스크립트의 경우 여러 패키지를 사용시 충돌이 발생할 가능성이높다.(var...)
-이를 해결하기 위해 Bundler를 사용
-- WebPack
-- Broserify
-- Parcel
-여러 파일을 모듈에 넣을 수 있고, 자동화가 가능하다. 그러나 쉽지않다.
+- 자바스크립트의 경우 여러 패키지를 사용시 충돌이 발생할 가능성이높다.(var...)
+    - 이를 해결하기 위해 Bundler(WebPack, Broserify, Parcel)를 사용
+    - 여러 파일을 모듈에 넣을 수 있고, 자동화가 가능하다. 그러나 쉽지않다.
 
 ## 2. 웹팩이전의 세계와 모듈의 개념
 - 수백개의 js 코드를 로드하고 있다면, 변수명의 충돌이 발생할 가능성이 많다.
 - 여러 테크닉이 있음. 그 중 하나가 모듈임
-- type="module"
-    - export import -> ES6 문법
+- type="module" + export, import -> ES6 문법
 - 네트워크 커넥션 수가 많아질 수록 속도가 저하되는 문제가 있음
 
 ## 3. 웹팩의 도입
-
+- 여러 파일을 묶고,구버전 브라우저에서도 동작하도록 만들어주는 번들러의 필요에서 시작 
+- webpack 설치
+    `$ npm install -D webpack webpack-cli`
+    `.gitignore`에 `*/node_modules` 추가
+- 엔트리 파일을 만들고 webpack 5.74.0 번들링
+    `$ npx webpack --entry ./source/index.js --output-path ./public/index_bundle.js`
+- 버전 및 환경설정에 따라서 결과가 다를 수 있다.
