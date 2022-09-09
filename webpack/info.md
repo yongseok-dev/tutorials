@@ -1,7 +1,6 @@
 # Webpack
 ## 강좌정보
-- [생활코딩 유튜브](https://www.youtube.com/watch?v=cp_MeXO2fLg&list=PLuHgQVnccGMChcT9IKopFDoAIoTA-03DA)
-- 이 수업은 여러개의 파일을 하나의 파일로 묶어주는 개발 자동화 도구인 webpack을 다룹니다.(총 11개 강좌)
+- [생활코딩 유튜브](https://www.youtube.com/watch?v=cp_MeXO2fLg&list=PLuHgQVnccGMChcT9IKopFDoAIoTA-03DA): 이 수업은 여러개의 파일을 하나의 파일로 묶어주는 개발 자동화 도구인 webpack을 다룹니다.(11개 강좌)
 
 ## 수강목적
 - webpack에 대한 이해를 바탕으로 sass, typescript, jsx와 같은 언어들을 네이티브 언어로 컴파일한다.
@@ -14,7 +13,7 @@
 - 개발 중에 파일이 수정 되었을 때 자동으로 브라우저의 내용을 리로드
 
 ## 학습방법
-- 수강기간: 
+- 수강기간: 2022.09.09~
 
 ## 배운 것
 ### 사고/태도
@@ -26,7 +25,7 @@
 ### 스킬
 - 설정파일에도 조건문이 들어갈 수 있다면 보다 편하게 제어할 수 있는 가능성이 있음
 ### 지식
-- 
+- 체이닝
 
 ## 1. 수업소개
 - 자바스크립트의 경우 여러 패키지를 사용시 충돌이 발생할 가능성이높다.(var...)
@@ -62,4 +61,10 @@
 - webpack의 핵심: css 같은 파일도 함께 모듈화한다.
 - [로더 키워드](https://webpack.js.org/loaders/)를 아는게 필요하다.
 - Loading CSS: `$ npm install --save-dev css-loader style-loader`
-- 로더는 가공공장, config 모듈, 룰에서 파일을 만나면 로더를 돌린다.(체이닝 동작)
+- 로더는 가공공장, config 모듈, 룰에서 파일을 만나면 로더다 돌아간다.(체이닝 동작)
+
+## 7. output설정
+- 파일을 어떻게 나눌 것 인지?
+- entry, output에 정보를 추가한다.
+    - `entry:{ index:"경로1", about:"경로2"}`
+    - `filename: '[name]_bundle.js'`
