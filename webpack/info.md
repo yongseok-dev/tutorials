@@ -17,8 +17,11 @@
 - 수강기간: 
 
 ## 배운 것
-### 태도
-- 
+### 사고/태도
+- 프로그래밍 3단계
+    - INPUT
+    - PROCESS
+    - OUTPUT
 ### 스킬
 - 
 ### 지식
@@ -43,3 +46,10 @@
 - 엔트리 파일을 만들고 webpack 5.74.0 번들링
     `$ npx webpack --entry ./source/index.js --output-path ./public/index_bundle.js`
 - 버전 및 환경설정에 따라서 결과가 다를 수 있다.
+
+## 4. 설정파일 도입
+- 다양한 형태의 자원들을 webpack 사용시 단순하게 만들어준다.
+- 체계적이고 보기 좋게 webpack [configuration](https://webpack.js.org/configuration/)를 사용해보자
+- webpack.config.js 생성
+- `$ npx webpack --config webpack.config.js` = `npx webpack`(단, webpack.config.js 이름 동일해야 동작)
+
