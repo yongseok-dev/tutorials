@@ -46,4 +46,4 @@
 
 * 연습문제를 제공하는 형태가 흥미로웠다.
 
-[<- 뒤로](../section02.md) [홈](../README.md) [다음 ->](./section04.md)
+[<- 뒤로](./section02.md) [홈](../info.md) [다음 ->](./section04.md)

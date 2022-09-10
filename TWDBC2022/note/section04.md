@@ -48,4 +48,4 @@
  - <h1>&#9731;Snowman Productions <sup>&reg;</sup></h1>
 `<h1>&#9731;Snowman Productions <sup>&reg;</sup></h1>`
 
-[<- 뒤로](./section03.md) [홈](../README.md) [다음 ->](./section05.md)
+[<- 뒤로](./section03.md) [홈](../info.md) [다음 ->](./section05.md)

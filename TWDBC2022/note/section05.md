@@ -43,4 +43,4 @@
 
 * 연습문제
     - table 작성하기
-[<- 뒤로](../section04.md) [홈](../README.md) [다음 ->](./section06.md)
+[<- 뒤로](./section04.md) [홈](../info.md) [다음 ->](./section06.md)

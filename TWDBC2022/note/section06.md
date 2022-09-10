@@ -32,4 +32,4 @@
 - text-transform: none | capitalize | uppercase | lowercase | initial | inherit
 
 
-[<- 뒤로](../section05.md) [홈](../README.md) [다음 ->](./section06.md)
+[<- 뒤로](./section05.md) [홈](../info.md) [다음 ->](./section07.md)
