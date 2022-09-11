@@ -35,8 +35,13 @@
 ### github issues
 - issues: 코드를 보면서 얘기를 나눌 수 있는 공간
 - 업무용 게시판이라고 생각하자
+- `이슈생성->이슈종료`의 생명주기
 ### Clone Repository & git config
-- 
+- clone: github에 올라와 있는 파일을 내 컴퓨터(로컬) 환경에 복제
+    - repository 내 code 버튼으로 HTTPS/SSH 주소 사용
+    - VSCode 에서 `cmd+,` `Files: Exclude` 통해서 `**/.git` 폴더 숨김을 해제할 수 있다.
+    - VSCode Git Graph 익스텐션 사용시 히스토리 확인 가능(어디를 수정 했는지 쉽게 파악할 수 있다.)
+- config: commit한 사람을 인증(누구인지 확인)
 ### git push
 - 
 ### git pull
