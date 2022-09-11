@@ -45,7 +45,8 @@
     - $`git config --global user.name ~`
     - $`git config --global user.email ~`
 ### git push
-- 
+- push: 로컬의 커밋 내용을 원격저장소(origin)에 업로드
+- 분산관리 시스템, 인터넷이 끊겨도 동작하고 있다.(서로의 버전이 달리지는 문제가 생긱 수 있다.)
 ### git pull
 - 
 ### git fetch & merge
