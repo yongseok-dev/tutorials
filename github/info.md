@@ -33,6 +33,7 @@
 - commit: 버전을 기록함(세이브와 같다)
     - github 내에서 수정, 파일로 등록, git cli에서 `push`
 ### github issues
+- issues: 코드를 보면서 얘기를 나눌 수 있는 공간
 - 
 ### Clone Repository & git config
 - 
