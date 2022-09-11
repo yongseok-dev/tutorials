@@ -34,7 +34,7 @@
     - github 내에서 수정, 파일로 등록, git cli에서 `push`
 ### github issues
 - issues: 코드를 보면서 얘기를 나눌 수 있는 공간
-- 
+- 업무용 게시판이라고 생각하자
 ### Clone Repository & git config
 - 
 ### git push
