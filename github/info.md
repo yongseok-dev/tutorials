@@ -12,28 +12,48 @@
 
 ## 배운 것
 ### 태도
-- 
+- 복잡하고 이거 어떻게 사람이 쓰지라고 생각하는 것도, 필요한 부분을 학습하고 사용하면 된다.
 ### 스킬
 - 
 ### 지식
-- 
+- dropbox: 깃의 형상관리처럼 일반인에게 파일의 공유 및 관리기능 제공에서 출발
 
 ## Git 기초
 ### Git과 Github란?
+- 짧게도, 길게도 학습할 수 있는 것이 깃
+- git client
+    - git cli, VSCode-git, ...
+- git server
+    - Github.com, ...
+- git client -> git hub -> 여러 client로 동기화
 ### Create Repository & Commit
+- 
 ### github issues
+- 
 ### Clone Repository & git config
+- 
 ### git push
+- 
 ### git pull
+- 
 ### git fetch & merge
+- 
 ### git init & add
+- 
 ### git checkout
+- 
 ### git remote
+- 
 
 ## Git을 통해 협업하기
 ### Create branch
+- 
 ### Merge into current branch
+- 
 ### Co-working
+- 
 ### Conflict
+- 
 ### Pull request
-### Pull request & Conflict
+- 
+### Pull request & Conflict- 
