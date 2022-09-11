@@ -42,6 +42,8 @@
     - VSCode 에서 `cmd+,` `Files: Exclude` 통해서 `**/.git` 폴더 숨김을 해제할 수 있다.
     - VSCode Git Graph 익스텐션 사용시 히스토리 확인 가능(어디를 수정 했는지 쉽게 파악할 수 있다.)
 - config: commit한 사람을 인증(누구인지 확인)
+    - $`git config --global user.name ~`
+    - $`git config --global user.email ~`
 ### git push
 - 
 ### git pull
