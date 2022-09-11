@@ -29,7 +29,9 @@
     - Github.com, ...
 - git client -> git hub -> 여러 client로 동기화
 ### Create Repository & Commit
-- 
+- repository: git 저장소
+- commit: 버전을 기록함(세이브와 같다)
+    - github 내에서 수정, 파일로 등록, git cli에서 `push`
 ### github issues
 - 
 ### Clone Repository & git config
