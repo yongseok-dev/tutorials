@@ -67,8 +67,12 @@
     - 스테이지를 이용해서 작업단위 별로 나눠서 커밋이 가능
 ### git checkout
 - git checkout: 기존의 commit hisotry로 저장소를 변경한 후 오류를 수정한 다음 다시 commit을 통해 버전을 업데이트
+- git graph 통해서 쉽게 변경 및 이동이 가능하다. 과거 커밋 시점으로 이동은 빈공간에서 체크아웃, 최신으로 돌아올 때는 `main/master`에서 체크아웃 하기
 ### git remote
-- 
+- git remote: 로컬 저장소에서 작업한 프로젝트를 새로운 원격저장소에 push
+- log 확인
+    - $`git log --oneline`: 커밋 로그 출력
+    - $`git log --oneline --graph --all` : 그래프 형태로 출력
 
 ## Git을 통해 협업하기
 ### Create branch
