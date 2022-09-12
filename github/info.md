@@ -70,13 +70,16 @@
 - git graph 통해서 쉽게 변경 및 이동이 가능하다. 과거 커밋 시점으로 이동은 빈공간에서 체크아웃, 최신으로 돌아올 때는 `main/master`에서 체크아웃 하기
 ### git remote
 - git remote: 로컬 저장소에서 작업한 프로젝트를 새로운 원격저장소에 push
-- log 확인
+- log 확인: 진행상황, 온라인과 로컬의 차이나는 부분 등을 확인할 수 있다.
     - $`git log --oneline`: 커밋 로그 출력
     - $`git log --oneline --graph --all` : 그래프 형태로 출력
 
 ## Git을 통해 협업하기
 ### Create branch
-- 
+- 여러 작업을 각각 해보고 싶다.
+- 실험적인 작업(DEV)와 메인(main)을 분리해서 사용한다.
+- main/master 는 기본 브랜치
+- github 페이지에서 브랜치 생성, git graph에서 브랜치 
 ### Merge into current branch
 - 
 ### Co-working
