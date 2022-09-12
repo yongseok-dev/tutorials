@@ -64,8 +64,9 @@
 ### git init & add
 - git init: 로컬에서 git을 활용하는 방법
 - git add: git commit 전 stage에 작업을 쌓아두는 것
+    - 스테이지를 이용해서 작업단위 별로 나눠서 커밋이 가능
 ### git checkout
-- 
+- git checkout: 기존의 commit hisotry로 저장소를 변경한 후 오류를 수정한 다음 다시 commit을 통해 버전을 업데이트
 ### git remote
 - 
 
