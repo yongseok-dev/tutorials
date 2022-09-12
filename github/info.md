@@ -76,7 +76,7 @@
 
 ## Git을 통해 협업하기
 ### Create branch
-- 
+- 브랜치(branch)는 프로젝트을 바탕으로 독립적으로 개발을 할 수 있을 수 있는 저장소(작업영역)
 ### Merge into current branch
 - 
 ### Co-working
