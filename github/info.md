@@ -78,7 +78,7 @@
 ### Create branch
 - 브랜치(branch)는 프로젝트을 바탕으로 독립적으로 개발을 할 수 있을 수 있는 저장소(작업영역)
 ### Merge into current branch
-- 
+- merge: branch를 생성해 새로운 기능을 구현하거나 debug 등 작업을 한 이후 main||master branch에 합치는 작업
 ### Co-working
 - 
 ### Conflict
