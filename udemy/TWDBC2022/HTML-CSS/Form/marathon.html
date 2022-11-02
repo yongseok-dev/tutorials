@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마라톤 신청서</title>
+</head>
+<body>
+ <h1>마라톤 참가 신청서</h1>
+ <form action="">
+     <p>
+        <label for="firstName">이름
+             <input id="firstName" name="firstName" type="text" required>
+        </label>
+        <label for="lastName">성
+             <input id="lastName" name="lastName" type="text" required>
+        </label>
+    </p>
+    <p>
+        <label for="">Select a Race:
+            <input type="radio" name="marathonType" id="fun" value="fun" required><label for="fun">Fun Run 5k</label>
+            <input type="radio" name="marathonType" id="half" value="half" required><label for="half">Half Marathon</label>
+            <input type="radio" name="marathonType" id="full" value="full" required><label for="full">Full Marathon</label>
+        </label>
+    </p>
+    <p>
+        <label for="email">Email
+            <input type="email" name="" id="" required>
+        </label>
+        <label for="password">Password
+            <input type="password" name="" id="" required>
+        </label>
+    </p>
+    <p>
+        <label for="age">
+            Select Age Group
+            <select name="age" id="age" required>
+                <option value="1">under18</option>
+                <option value="2">18~30</option>
+                <option value="3">31~50</option>
+                <option value="4">50+</option>
+            </select>
+        </label>
+    </p>
+ </form>
+</body>
+</html>
