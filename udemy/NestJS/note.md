@@ -34,6 +34,25 @@
 - classes
 - objects
 
+#### type inference
+
+- 선언과 할당을 동시에하면, 타입추론이 사용됨
+
+#### variables type annotations
+
+- 함수에서 무엇을 반환할지 모르는 경우
+- 나중에 변수를 초기화 해야하는 경우
+- type 이 변해야하는 경우
+
+#### functions
+
+- 인수에 대해서는 타입추론을 얻지 못하기 때문에 annotation으로 할당
+- 리턴 값은 타입추론 발생하지만, 수동 할당이 적절함
+
+#### objects
+
+- 형태 기억하기
+
 ## TS의 디자인 패턴을 이해하기
 
 ### Tip
