@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://localhost:5000',
+    origin: 'http://localhost:3000',
     credentials: true,
   },
 });
@@ -20,11 +20,11 @@ io.on('connection', (socket) => {
 
 app.use(
   cors({
-    origin: 'http://localhost:5000',
+    origin: 'http://localhost:3000',
     credentials: true,
   })
 );
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`>>${port}번 서버 실행`);
 });
