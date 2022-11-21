@@ -7,6 +7,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { BoardStatus } from './board-status.enum';
 import { BoardRepository } from './board.repository';
 import { InjectRepository } from '@nestjs/typeorm';
+import { Board } from './board.entity';
 
 @Injectable()
 export class BoardsService {
@@ -32,7 +33,7 @@ export class BoardsService {
   // }
 
   async getBoardById(id: number): Promise<Board> {
-    const found = await this.boardRepository.findOne(id);
+    const found = await this.boardRepository.findOne({ where: { id } });
 
     if (!found) {
       throw new NotFoundException(`id ${id} 값이 없습니다.`);
