@@ -26,11 +26,11 @@ const offerMap = new Map();
 const socketMap = new Map();
 
 io.on('connection', (socket) => {
-  socketMap.set(socket.id, roomId);
   console.log(`socket connected: ${socket.id}`);
   //1.client =>join(roomId) caller.req
   socket.on('join', ({ roomId }) => {
     console.log(`join-room-id: ${roomId}`);
+    socketMap.set(socket.id, roomId);
     socket.join(roomId);
     //방이 있는지 체크
     const prevOffer = offerMap.get(roomId);
