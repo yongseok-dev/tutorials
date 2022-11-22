@@ -6,13 +6,9 @@ const SOCKET_URL = 'http://localhost:8000';
 const configuration = {
   iceServers: [
     {
-      urls: [
-        'stun:stun.l.google.com:19302',
-        'stun:stun1.l.google.com:19302',
-        'stun:stun2.l.google.com:19302',
-        'stun:stun3.l.google.com:19302',
-        'stun:stun4.l.google.com:19302',
-      ],
+      urls: ['turn:turn-test.ml:3478?transport=tcp'],
+      username: 'hello',
+      credential: 'world',
     },
   ],
 };
@@ -20,7 +16,7 @@ const configuration = {
 function App() {
   const localVideoRef = useRef(null);
   const remoteVideoRef = useRef(null);
-  const roomIdRef = useRef('randomString');
+  const roomIdRef = useRef(window.location.search);
   const pcRef = useRef(new RTCPeerConnection(configuration));
   const socketRef = useRef(null);
   const iceCandidateRef = useRef([]);
@@ -156,7 +152,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {' '}
         <video id="localVideo" ref={localVideoRef} muted />
         <video id="remoteVideo" ref={remoteVideoRef} />
         {/* <button onClick={getLocalVideo}>카메라 가져오기</button> */}
