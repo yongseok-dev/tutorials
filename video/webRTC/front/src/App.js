@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './App.css';
 import { io } from 'socket.io-client';
+const SOCKET_URL = 'http://localhost:8000';
 
 const configuration = {
   iceServers: [
@@ -63,7 +64,7 @@ function App() {
   const handleJoinBtnClick = () => {
     // console.log('>> Join Click');
     //socket connect
-    const socket = io('http://localhost:8000');
+    const socket = io(SOCKET_URL);
     socketRef.current = socket;
     // console.log(`socket: `, socket);
     //join(roomID) => 1.socket

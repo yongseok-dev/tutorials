@@ -1,15 +1,23 @@
 import express from 'express';
 import { Server } from 'socket.io';
-import http from 'http';
 import cors from 'cors';
+import https from 'https';
+import fs from 'fs';
+
+const port = 8000;
+const CORS_URL = 'http://localhost:3000';
+
+const options = {
+  key: fs.readFileSync('../cert/private.key'),
+  cert: fs.readFileSync('../cert/certificate.crt'),
+};
 
 const app = express();
-const port = 8000;
-const server = http.createServer(app);
+const server = https.createServer(options, app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: CORS_URL,
     credentials: true,
   },
 });
@@ -50,7 +58,7 @@ io.on('connection', (socket) => {
 
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: CORS_URL,
     credentials: true,
   })
 );
