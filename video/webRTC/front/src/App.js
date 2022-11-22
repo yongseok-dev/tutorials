@@ -23,7 +23,7 @@ function App() {
   const socketRef = useRef(null);
 
   const createNewOffer = async () => {
-    console.log('roomId가 없음');
+    console.log('3-2 >> roomId가 없음');
     const newOffer = await pcRef.current.createOffer();
     console.log(`>> newOffer`, newOffer);
     await pcRef.current.setLocalDescription(newOffer);
@@ -37,11 +37,11 @@ function App() {
   const handleRemoteAnswer = async (answer) => {
     const remoteAnswer = new RTCSessionDescription(answer);
     console.log(`remoteAnswer`, remoteAnswer);
-    await pcRef.setRemoteDescription(remoteAnswer);
+    await pcRef.current.setRemoteDescription(remoteAnswer);
   };
 
   const handleRemoteOffer = async (offer) => {
-    console.log('>> roomId가 있음');
+    console.log('3-1 >> roomId가 있음');
     const remoteOffer = new RTCSessionDescription(offer);
     console.log(`remoteOffer: `, remoteOffer);
     await pcRef.current.setRemoteDescription(remoteOffer);
@@ -77,7 +77,7 @@ function App() {
 
     //remote-answer(answer) <= 4.socket
     socket.on('remote-answer', ({ answer }) => {
-      console.log('<< remote-answer', answer);
+      console.log('4 << remote-answer', answer);
       handleRemoteAnswer(answer);
     });
   };
