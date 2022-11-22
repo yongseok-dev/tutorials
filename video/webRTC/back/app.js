@@ -42,6 +42,10 @@ io.on('connection', (socket) => {
     console.log(`4.clint <= remote-answer(answer)`, answer);
     socket.to(roomId).emit('remote-answer', { answer });
   });
+
+  socket.on('new-ice', ({ iceCandidates, roomId }) => {
+    socket.to(roomId).emit('new-ice', { iceCandidates });
+  });
 });
 
 app.use(
